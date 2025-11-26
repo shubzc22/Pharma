@@ -42,17 +42,21 @@
     }
 
     .bottom-bar{
-      position:absolute;
-      left:var(--border-size);
-      right:var(--border-size);
-      bottom:var(--border-size);
-      height:var(--bottom-h);
-      background:var(--accent);
+      position: fixed;
+      left: var(--border-size);
+      right: var(--border-size);
+      bottom: var(--border-size);
+      height: var(--bottom-h);
+      background: var(--accent);
       display:flex;
-      border-radius:8px;
-      overflow:hidden;
-      z-index:20;
-    }
+      align-items:center;
+      justify-content:space-between;
+      box-sizing: border-box;
+      border-radius: 8px;
+      overflow: hidden;
+      z-index: 999;
+}
+
 
     .bar-button{
       flex:1;
